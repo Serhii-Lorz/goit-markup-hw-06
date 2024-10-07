@@ -1,54 +1,5 @@
 /* Стилі для second-section */
 
-.second-section {
-    padding: 120px 0;
-    justify-content: center;
-}
-
-.features {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin: 0 auto;
-}
-
-.features-li {
-    flex-basis: calc((100% - 72px) / 4);
-}
-
-.second-section-svg {
-    display: flex;
-    width: 264px;
-    height: 112px;
-    gap: 0px;
-    border-radius: 4px;
-    opacity: 0px;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4F4FD;
-    border: 1px solid #8E8F99;
-    margin-bottom: 8px;
-}
-
-.second-section .features .title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
-.second-section .features .paragraph {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #434455;
-}
-
 /* Стилі для third-section */
 
 .third-section {
