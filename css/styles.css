@@ -474,7 +474,9 @@ button {
 
 @media (min-resolution: 192dpi) {
     .first-section {
-        background-image: url(../images/people-office@2.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/people-office@2.jpg);
     }
 }
 
