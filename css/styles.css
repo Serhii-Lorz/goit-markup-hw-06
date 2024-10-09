@@ -291,19 +291,23 @@ button {
 }
 
 .mobile-menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
-    gap: 0px;
     border-radius: 50%;
-    opacity: 0.1;
-    background-color: #E7E9FC;
-    border: 1px solid #2E2F42;
+    background-color: rgba(231, 233, 252, 0.1);
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    padding: 0;
+    cursor: pointer;
 }
 
 .mobile-menu-close-button {
+    opacity: 1;
     fill: #2E2F42;
 }
 
@@ -351,6 +355,18 @@ button {
     color: #404BBF;
 }
 
+.mobile-menu-address {
+    margin-bottom: 48px;
+}
+
+.mobile-menu-address-li {
+    margin-bottom: 24px;
+}
+
+.mb-address-special {
+    margin-bottom: 0;
+}
+
 .mobile-menu-link-address {
     display: flex;
     font-size: 20px;
@@ -361,7 +377,10 @@ button {
     text-decoration: none;
     font-style: normal;
     color: #434455;
-    margin: 24px 0 48px 0;
+}
+
+.header .messanger {
+    margin-top: 0;
 }
 
 .mobile-menu-link-address:hover {
