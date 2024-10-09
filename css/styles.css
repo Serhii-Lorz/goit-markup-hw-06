@@ -1,22 +1,23 @@
-/* На єтап розробки:
-        -Спрятані секції
+/* Структура HTML файлу:
+            -Стилі для body та загальні стилі
+            -Адаптивні стилі
+            -Стилі для шапки
+            -Стилі для Мобільної Меню
+            -Стилі для іконок у мобільному меню та третій секції
+            -Стилі для першої секції
+                -Стилі для картинок
+            -Стилі для другої секції
+            -Стилі для третя секція
+            -Стилі для четвуртої секції
+            -Стилі для підвалу
+            -Стилі для форми заказу */
 
-Старі назви секцій:
-        -Шапка - header
-        -Перша секція - first-section
-        -Друга секція - second-section
-        -Третя секція - third-section
-        -Четверта секція - fourth-section
-        -Підвал - footer
-        -Модалка заказу - modal-overflow */
-
-/* Спрятані секції */
-
+            
 .hidden {
     display: none;
 }
 
-/* Стилі для body та загальні стилі*/
+/* Стилі для body та загальні стилі */
 
 *,
 *::before,
@@ -469,6 +470,14 @@ button {
     max-width: 1440px;
 }
 
+/* Стилі для картинки */
+
+@media (min-resolution: 192dpi) {
+    .first-section {
+        background-image: url(../images/people-office@2.jpg);
+    }
+}
+
 .main-title {
     max-width: 216px;
     font-size: 32px;
@@ -580,7 +589,9 @@ button {
     .features {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 0;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .features-li {
@@ -885,10 +896,11 @@ button {
 
 @media screen and (min-width: 768px) {
     .fourth-section {
-        padding: 96px;
+        padding: 16px;
     }
 
     .app-ul {
+        max-width: 768px;
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -903,6 +915,7 @@ button {
     
     .app-ul {
         row-gap: 48px;
+        max-width: none;
     }
 }
 
@@ -919,13 +932,6 @@ button {
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
-}
-
-.footer-logo-and-p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: auto;
 }
 
 .footer .logo {
@@ -954,6 +960,9 @@ button {
     text-align: left;
     color: #F4F4FD;
     max-width: 264px;
+}
+
+.footer .social-link {
     margin-bottom: 72px;
 }
 
@@ -975,7 +984,6 @@ button {
     width: 40px;
     width: 100%;
     height: 100%;
-    margin-bottom: 72px;
 }
 
 .footer .messanger-a {
@@ -1028,6 +1036,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
 }
 
 .subscribe-input {
@@ -1077,17 +1086,25 @@ button {
     margin-left: 16px;
 }
 
+.footer-logo-and-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+
 @media screen and (min-width: 768px) {
     .footer .container {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-        justify-content: left;
+        justify-content: center;
     }
 
     .footer-logo-and-p {
         margin-right: 24px;
-        justify-content: left;
+        align-items: flex-start;
     }
 
     .social-link-p {
@@ -1125,20 +1142,18 @@ button {
 
     .footer-logo-and-p {
         align-items: left;
+        margin-right: 120px;
+        margin-bottom: 0;
+    }
+
+    .footer .social-link {
+        margin-bottom: 0;
+        margin-right: 80px;
     }
 
     .footer .messanger-li {
         margin-bottom: 0;
     }
-    
-    .subscribe-form-title {
-        margin-left: 80px;
-    }
-
-    .subscribe-form {
-        margin-left: 80px;
-    }
-
 }
 
 /* Стилі для форми заказу */
