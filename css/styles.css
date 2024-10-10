@@ -768,7 +768,8 @@ button {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 64px;
     }
 
     .our-team-li {
@@ -898,7 +899,7 @@ button {
 
 @media screen and (min-width: 768px) {
     .fourth-section {
-        padding: 16px;
+        padding: 96px 0;
     }
 
     .app-ul {
@@ -1092,7 +1093,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: auto;
     margin-bottom: 72px;
 }
 
